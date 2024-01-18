@@ -24,9 +24,9 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** <br>
     -> https://github.com/Naylee0913/OSProject_KeyboardWackers
-2. How many files and folders are in this repository. ***(1 mark)*** 
+2. How many files and folders are in this repository. ***(1 mark)*** <br>
     -> 6 png files + 1 md file and 1 folder
 
 
@@ -59,12 +59,12 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** <br>
     -> Ubuntu Linux
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
-    -> Standard: 4 GB RAM, 32 GB disk, and 2 vCPUs.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** <br>
+    -> Standard: 4 GB RAM, 32 GB disk, and 2 vCPUs.<br>
     -> Performance: 8 GB RAM, 64 GB disk, and 4 vCPUs.
-3. Why must we commit and sync our current work on source control? ***(1 mark)***
+3. Why must we commit and sync our current work on source control? ***(1 mark)***<br>
     -> Committing and syncing on GitHub is essential for collaborative coding to be effective and to minimize conflicts. Commits serve as a safe cloud backup, maintaining code history for efficient recovery, simplifying backup and recovery processes. Workflows for integration and deployment gain from consistent syncing, support for continuous integration, and maintaining a deployable code state.
 
 ## Exploring the Terminal
