@@ -268,66 +268,10 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
-
-processor       : 1
-vendor_id       : AuthenticAMD
-cpu family      : 25
-model           : 1
-model name      : AMD EPYC 7763 64-Core Processor
-stepping        : 1
-microcode       : 0xffffffff
-cpu MHz         : 3227.005
-cache size      : 512 KB
-physical id     : 0
-siblings        : 2
-core id         : 0
-cpu cores       : 1
-apicid          : 1
-initial apicid  : 1
-fpu             : yes
-fpu_exception   : yes
-cpuid level     : 13
-wp              : yes
-flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
-bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips        : 4890.85
-TLB size        : 2560 4K pages
-clflush size    : 64
-cache_alignment : 64
-address sizes   : 48 bits physical, 48 bits virtual
-power management:
 ```
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
 ```bash
-@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ cat /proc/cpuinfo
-processor       : 0
-vendor_id       : AuthenticAMD
-cpu family      : 25
-model           : 1
-model name      : AMD EPYC 7763 64-Core Processor
-stepping        : 1
-microcode       : 0xffffffff
-cpu MHz         : 3242.686
-cache size      : 512 KB
-physical id     : 0
-siblings        : 2
-core id         : 0
-cpu cores       : 1
-apicid          : 0
-initial apicid  : 0
-fpu             : yes
-fpu_exception   : yes
-cpuid level     : 13
-wp              : yes
-flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
-bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips        : 4890.85
-TLB size        : 2560 4K pages
-clflush size    : 64
-cache_alignment : 64
-address sizes   : 48 bits physical, 48 bits virtual
-power management:
-
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ top
 processor       : 1
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -370,16 +314,74 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5981.1 avail Mem
 Linux codespaces-a7b77c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
 11. What is the available free memory in the system. ***(1 mark)*** 
-
+    -> The available free memory in the system is 5.8 GiB
+```bash
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          7.7Gi       1.6Gi       150Mi       1.0Mi       6.0Gi       5.8Gi
+```
 12. What is the available disk space mounted on /workspace. ***(1 mark)***
-
+    ->The available disk space mounted on /workspace is 17525328 KiB
+```bash
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+/dev/loop3      32847680 13628256  17525328  44% /workspaces
+```
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
-
+    ->The version : Linux codespaces-a7b77c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC
+    -> Hardware Architecture: 2023 x86_64 x86_64 x86_64 GNU/Linux
+```bash
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ uname -a
+Linux codespaces-a7b77c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+```
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-
+    ->ls command provided the list of files and directories in a directory but in basic information. 
+    -> ls -asl command also provided the list of files and directories in a directory but in the detailed listing,including file permissions,number of links,owner,group,size and modification time or each file or directory.
+```bash
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ ls
+README.md  images
+```
+```bash
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ ls -asl
+total 36
+ 4 drwxrwxrwx+ 4 codespace root  4096 Jan 18 16:19 .
+ 4 drwxr-xrwx+ 5 codespace root  4096 Jan 18 16:19 ..
+ 4 drwxrwxrwx+ 9 codespace root  4096 Jan 18 16:47 .git
+20 -rw-rw-rw-  1 codespace root 16580 Jan 18 17:09 README.md
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jan 18 16:19 images
+```
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+    ->The TLB size of the Virtual CPU is 2560 4K pages
+```bash
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ cat /proc/cpuinfo
+TLB size        : 2560 4K pages
+```
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+    -> The CPU speed of the Virtual CPU is 3242.686 MHz
+```bash
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ cat /proc/cpuinfo
+cpu MHz         : 3242.686
+```
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+    -> The top running process that consumes the most CPU cycles is PID 2184 with 1.3% usaged of CPU
+```bash
+@Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ top
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                
+   2184 codespa+  20   0   21.1g 329256  46464 S   1.3   4.1   1:13.87 node                                                                   
+   2759 codespa+  20   0  676036  63712  39040 S   0.7   0.8   0:02.56 node                                                                   
+   2058 codespa+  20   0  982228 122388  42496 S   0.3   1.5   0:07.60 node                                                                   
+      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.06 docker-init                                                            
+      7 codespa+  20   0    7236   1664   1664 S   0.0   0.0   0:00.01 sleep                                                                  
+     86 root      20   0   12192   3608   2688 S   0.0   0.0   0:00.00 sshd                                                                   
+    790 root      20   0 1463080  85060  49664 S   0.0   1.0   0:00.32 dockerd                                                                
+    798 root      20   0 1282448  51748  30464 S   0.0   0.6   0:00.33 containerd                                                             
+   1522 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                                     
+   1646 root      20   0    2616   1664   1664 S   0.0   0.0   0:00.00 sh                                                                     
+   2049 codespa+  20   0    2624   1536   1536 S   0.0   0.0   0:00.01 sh                                                                     
+   2191 codespa+  20   0    2616   1664   1664 S   0.0   0.0   0:00.01 sh                                                                     
+   2214 root      20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                     
+   2256 codespa+  20   0  849188  58516  38656 S   0.0   0.7   0:00.41 node    
+```
 
 ## Running your own container instance.
 
