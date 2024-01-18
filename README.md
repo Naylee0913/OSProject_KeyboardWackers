@@ -26,7 +26,8 @@ Team Mates:
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
     https://github.com/Naylee0913/OSProject_KeyboardWackers
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+2. How many files and folders are in this repository. ***(1 mark)*** 
+    6 png files + 1 md file and 1 folder
 
 
 ## Exploring github codespaces
