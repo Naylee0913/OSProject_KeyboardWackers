@@ -313,29 +313,29 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5981.1 avail Mem
 @Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ uname -a
 Linux codespaces-a7b77c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
-11. What is the available free memory in the system. ***(1 mark)*** 
+11. What is the available free memory in the system. ***(1 mark)*** <br>
     -> The available free memory in the system is 5.8 GiB
 ```bash
 @Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ free -h
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.6Gi       150Mi       1.0Mi       6.0Gi       5.8Gi
 ```
-12. What is the available disk space mounted on /workspace. ***(1 mark)***
+12. What is the available disk space mounted on /workspace. ***(1 mark)***<br>
     ->The available disk space mounted on /workspace is 17525328 KiB
 ```bash
 @Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
 /dev/loop3      32847680 13628256  17525328  44% /workspaces
 ```
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
-    ->The version : Linux codespaces-a7b77c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***<br>
+    ->The version : Linux codespaces-a7b77c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC <br>
     -> Hardware Architecture: 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```bash
 @Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ uname -a
 Linux codespaces-a7b77c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-    ->ls command provided the list of files and directories in a directory but in basic information. 
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** <br>
+    ->ls command provided the list of files and directories in a directory but in basic information. <br>
     -> ls -asl command also provided the list of files and directories in a directory but in the detailed listing,including file permissions,number of links,owner,group,size and modification time or each file or directory.
 ```bash
 @Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ ls
@@ -350,19 +350,19 @@ total 36
 20 -rw-rw-rw-  1 codespace root 16580 Jan 18 17:09 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 Jan 18 16:19 images
 ```
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** <br>
     ->The TLB size of the Virtual CPU is 2560 4K pages
 ```bash
 @Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ cat /proc/cpuinfo
 TLB size        : 2560 4K pages
 ```
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** <br>
     -> The CPU speed of the Virtual CPU is 3242.686 MHz
 ```bash
 @Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ cat /proc/cpuinfo
 cpu MHz         : 3242.686
 ```
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** <br>
     -> The top running process that consumes the most CPU cycles is PID 2184 with 1.3% usaged of CPU
 ```bash
 @Naylee0913 ➜ /workspaces/OSProject_KeyboardWackers (main) $ top
