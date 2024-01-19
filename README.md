@@ -464,15 +464,15 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 ***Questions:***
 
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** <br>
-4
+    -> User = root
+   -> Group = root
 ```bash
 @hadurz4367 ➜ /workspaces/OSProject_KeyboardWackers (main) $ ls -l /workspaces/OSProject_KeyboardWackers/myroot
 total 4
 -rw-rw-rw- 1 root root 19 Jan 19 03:17 helloworld.txt
 ```
-2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)*** 
-<br>
-Yes.
+2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)*** <br>
+    ->Yes. Now the user=codespace
 ```bash
 @hadurz4367 ➜ /workspaces/OSProject_KeyboardWackers (main) $ sudo chown -R codespace:codespace myroot
 @hadurz4367 ➜ /workspaces/OSProject_KeyboardWackers (main) $ ls -l myroot
