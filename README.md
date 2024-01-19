@@ -464,7 +464,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 ***Questions:***
 
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** <br>
-    -> User = root
+    -> User = root <br>
    -> Group = root
 ```bash
 @hadurz4367 ➜ /workspaces/OSProject_KeyboardWackers (main) $ ls -l /workspaces/OSProject_KeyboardWackers/myroot
