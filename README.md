@@ -505,30 +505,28 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-   Permissions: drwxrwxrwx+
-   User: 1000
-   Group: root
-   Size: 4096
-   Timestamp: Jan 28 16:08
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.<br>
+   -> Permissions: drwxrwxrwx+ <br>
+   -> User: 1000 <br>
+   -> Group: root <br>
 ```bash
-   @yapludin ➜ /workspaces/OSProject_KeyboardWackers/myroot (main) $ docker exec -it vigorous_nobel ls -ld /usr/local/apache2/htdocs
+   @yapludin ➜ /workspaces/OSProject_KeyboardWackers/myroot (main) $ docker exec -it reverent_gates ls -ld /usr/local/apache2/htdocs
    drwxrwxrwx+ 2 1000 root 4096 Jan 28 16:08 /usr/local/apache2/htdocs
    ```
-2. What port is the apache web server running. ***(1 mark)***
-   Apache web server is running on port 80 inside the container.
+2. What port is the apache web server running. ***(1 mark)*** <br>
+   -> Apache web server is running on port 80 inside the container. <br>
 ```bash
    @yapludin ➜ /workspaces/OSProject_KeyboardWackers/myroot (main) $ docker ps
    CONTAINER ID   IMAGE     COMMAND              CREATED          STATUS          PORTS                                   NAMES
-   a528c2ecde80   httpd     "httpd-foreground"   5 minutes ago    Up 5 minutes    0.0.0.0:8080->80/tcp, :::8080->80/tcp   vigorous_nobel
+   6fbea23e86b8   httpd     "httpd-foreground"   5 minutes ago    Up 5 minutes    0.0.0.0:8080->80/tcp, :::8080->80/tcp   reverent_gates
    ```
 
-3. What port is open for http protocol on the host machine? ***(1 mark)***
-   Apache web server is accessible on the host machine at port 8080. Therefore, the open port for HTTP on the host machine is 8080.
+3. What port is open for http protocol on the host machine? ***(1 mark)*** <br>
+   -> Apache web server is accessible on the host machine at port 8080. Therefore, the open port for HTTP on the host machine is 8080. <br>
 ```bash
    @yapludin ➜ /workspaces/OSProject_KeyboardWackers/myroot (main) $ docker ps
    CONTAINER ID   IMAGE     COMMAND              CREATED          STATUS          PORTS                                   NAMES
-   a528c2ecde80   httpd     "httpd-foreground"   5 minutes ago    Up 5 minutes    0.0.0.0:8080->80/tcp, :::8080->80/tcp   vigorous_nobel
+   6fbea23e86b8   httpd     "httpd-foreground"   5 minutes ago    Up 5 minutes    0.0.0.0:8080->80/tcp, :::8080->80/tcp   reverent_gates
    ```
 
 ## What to submit
